@@ -4,101 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel = "stylesheet" href="style.css">
-    <link rel = "stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">David Huang</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+    <!-- ---------- Header ---------- -->
+    <header class="header">
+        <a href="#home" class="logo">David
+        <span>Huang.</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ---------- Home ---------- -->
+    <section class="home" id="home">
+
+        <div class="home-img">
+            <img src="purplestitch-modified.png" alt="">
         </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">David Huang</div>
-        <div class = "hamburger-menu">
-            <div class = "hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+
+        <div class="home-content">
+            <h1>It's <span>David</span></h1>
+            <h3 class="text-animation">
+                I'm a <span></span>
+            </h3>
+    
+            <p>cs & psychology at uw-madison</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/david-huang-920462237/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/dhuango" target="_blank"><i class='bx bxl-github' ></i></a>
             </div>
-            <div class="menu-links">
-                <li><a href = "#about" onclick="toggleMenu()">About</a></li>
-                <li><a href = "#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href = "#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href = "#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt=""David Huang profile picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">David Huang</h1>
-            <p class="section__text__p2">Junior at the University of Wisconsin-Madison</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/david_huang_resume.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
-                class="icon" onclick="location.href='https://www.linkedin.com/in/david-huang-920462237/'">
-                <img src="./assets/github.png" alt="My Github profile"
-                class="icon" onclick="location.href='https://github.com/dhuango'">
-            </div>
+    
+            <a href="./david_huang_resume.pdf" target="_blank" class="btn">Download CV</a>
+    
         </div>
     </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img 
-                    src="./assets/about-pic.png" 
-                    alt="Profile picture" 
-                    class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                            src="./assets/experience.png" 
-                            alt="Experience icon" 
-                            class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p>2+ years <br>Backend Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img 
-                            src="./assets/education.png" 
-                            alt="Education icon" 
-                            class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>B.Sc. Bachelor's Degree <br>M.Sc. Master's Degree</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit maxime tenetur unde soluta sequi. Minus explicabo perferendis nesciunt pariatur maxime ex molestias. Eum voluptatibus repellendus quas quia nemo voluptate libero voluptates a qui eaque, quidem reiciendis neque magnam veritatis, laborum vitae itaque enim maiores atque similique suscipit numquam sunt.</p>
-                </div>
-            </div>
+
+    <!-- ---------- About ---------- -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3 class="text-animation">
+                <span></span>
+            </h3>
+            <p>Hello, my name is David Huang and I am a junior at the University of Wisconsin-Madison majoring in CS & Psychology. I am currently working as a Software Engineering Intern at Fayble for the summer.
+                <br><br>
+                I love problem-solving and approach everything with curiosity and tenacity. As my 5th grade basketball coach used to say: "Be a sponge and absorb everything." In my free time, I like to play basketball (duh), read fiction novels (please send recommendations if you have any), and spend time with family. 
+                <br><br> 
+                I am currently seeking internships for the summer of 2025 so please don't hesitate if you know of a good fit!
+            </p>
         </div>
-        <img 
-            src="./assets/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow" 
-            onclick="location.href='./#experience'"
-        />
+        <div class="about-img">
+            <img src="temp.png" alt="">
+        </div>
     </section>
+
+    <!-- ---------- Projects ---------- -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+
+        <div class="projects-container">
+
+            <a href="#home">
+                <div class="project-box" href="#home">
+                    <div class="project-info">
+                        <h4>Portfolio</h4>
+                        <p>Constructed using HTML, CSS, and JavaScript, this portfolio showcases a little about me and my current works. I utilized the Web3Forms API to set up the 'Contact' message box.</p>
+                    </div>
+                <div>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ---------- Contact ------------>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>    
+        <div class="row">
+            <div class="col">
+               <div class="contact-info">
+                    <p class="email">Email: 7davidhuang@gmail.com</p>
+                    <p>Tel: +1 (281)-748-6335</p>
+               </div>
+            </div>
+            <div class="col">
+                <form class="form-control" action="https://api.web3forms.com/submit" method="POST">
+                    <div class="form-inputs">
+                        <input type="hidden" name="access_key" value="bd9e434c-bc51-444c-8ea8-fc0c2c005232">
+
+                        <input type="text" name="name" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" id="email" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                   </div>
+                   <div class="form-button">
+                        <button class="btn">Send</button>
+                   </div>
+                </form>
+            </div>
+         </div>
+    </section>
+
+    <!-- ---------- Footer ---------- --> 
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/david-huang-920462237/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://github.com/dhuango" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            &copy; David Huang | All Rights Reserved
+        </p>
+    </footer>
+
     <script src="script.js"></script>
+    
 </body>
 </html>
