@@ -400,6 +400,7 @@ span {
 }
 
 .project-info h4 {
+    margin: 0 auto;
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -410,6 +411,13 @@ span {
     font-weight: 400;
     max-height: 100px;
     margin: auto;
+}
+
+#cart {
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: -75px;
+    margin-bottom: -50px;
 }
 
 /* Contact */
